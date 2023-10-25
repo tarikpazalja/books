@@ -25,5 +25,5 @@ app.listen(8081)
 
 
 console.log(
-  `🦊 Elysia is running at http://${app.server?.hostname}:${app.server?.port}`
+  `🦊 Elysia is rrunning at http://${app.server?.hostname}:${app.server?.port}`
 );
