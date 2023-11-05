@@ -28,8 +28,8 @@ app.delete('/books/:id', ({ db, params }) =>
   db.deleteBook(parseInt(params.id))
 );
 
-app.listen(8081)
-
+//app.listen(8081)
+app.listen(3000)
 
 console.log(
   `🦊 Elysia is rhhhhhhrunning at http://${app.server?.hostname}:${app.server?.port}`
