@@ -32,5 +32,5 @@ app.delete('/books/:id', ({ db, params }) =>
 app.listen(3000)
 
 console.log(
-  `🦊 Elysia is rhhhhhhrunning at http://${app.server?.hostname}:${app.server?.port}`
+  `🦊 Elysia is running at http://${app.server?.hostname}:${app.server?.port}`
 );
