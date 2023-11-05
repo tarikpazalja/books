@@ -1,7 +1,8 @@
 import { Elysia, t } from 'elysia';
 import { BooksDatabase } from './db';
+import { cors } from '@elysiajs/cors'
 
-const app = new Elysia().decorate('db', new BooksDatabase());
+const app = new Elysia().use(cors()).decorate('db', new BooksDatabase());
 
 app.get('/books', ({ db }) => db.getBooks());
 app.post('/books', ({ db, body }) => db.addBook(body), {
